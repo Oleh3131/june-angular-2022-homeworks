@@ -1,0 +1,12 @@
+.cardBlock{
+
+  width: 22.5%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: blanchedalmond;
+  border: 2px solid gold;
+  border-radius: 12px;
+
+}
