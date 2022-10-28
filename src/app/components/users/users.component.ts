@@ -12,8 +12,6 @@ export class UsersComponent implements OnInit {
 
   users: IUser[];
 
-  selectedUser: IUser;
-
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
@@ -22,9 +20,4 @@ export class UsersComponent implements OnInit {
 
   }
 
-  getUser(user: IUser) {
-
-    this.selectedUser = user;
-
-  }
 }

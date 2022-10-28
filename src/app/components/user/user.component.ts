@@ -1,6 +1,8 @@
-import {Component, Input, OnInit, EventEmitter, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 import {IUser} from "../../interfaces";
+
 
 @Component({
   selector: 'app-user',
@@ -12,19 +14,27 @@ export class UserComponent implements OnInit {
   @Input()
   user: IUser;
 
-  //Створюємо змінну за допомогою якої ми зможемо передати нашого user назовні в батьківську компоненту users
-  //@Output відповідає за те щоб ми могли віддати щось наверх (протилежний @Input())
 
-  @Output()
-  userLift = new EventEmitter<IUser>();
-
-  constructor() {
+  constructor(private router:Router,private activatedRoute:ActivatedRoute) {
   }
 
   ngOnInit(): void {
   }
 
-  lift(): void {
-    this.userLift.emit(this.user);
+
+  getDetails():void {
+
+    // this.router.navigate([this.user.id],{relativeTo:this.activatedRoute})
+
+  //  також в extras можна передавати state і отримаємо ті ж самі результати що ми передавали по url
+  //  тобто нічого перезагружатися не буде
+
+    this.router.navigate([this.user.id],{
+
+      relativeTo:this.activatedRoute,
+      state: {user:this.user}
+
+    })
+
   }
 }
