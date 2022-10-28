@@ -19,4 +19,10 @@ export class UserService {
 
   }
 
+  getById(id:number):Observable<IUser>{
+
+    return this.httpClient.get<IUser>(`${urls.users}/${id}`);
+
+  }
+
 }
