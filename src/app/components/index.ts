@@ -1,0 +1,7 @@
+export * from './comment/comment.component'
+export * from './comments/comments.component'
+export * from './comment-details/comment-details.component'
+export * from './post/post.component'
+export * from './posts/posts.component'
+export * from './post-details/post-details.component'
+export * from './header/header.component'
