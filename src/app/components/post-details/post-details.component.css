@@ -1,0 +1,9 @@
+.postDetailsBlock{
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #10ea10;
+
+}

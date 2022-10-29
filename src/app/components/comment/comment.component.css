@@ -1,0 +1,16 @@
+.commentPostBlock{
+
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: azure;
+  border: 3px solid red;
+  border-radius: 12px;
+
+}
