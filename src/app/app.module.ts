@@ -24,7 +24,7 @@ const routes: Routes = [
         ]
       },
       {path: 'comments', component: CommentPageComponent, children: [
-          {path: ':id', component: CommentPageComponent}
+          {path: ':id', component: CommentDetailsComponent}
         ]
       }
     ]
