@@ -1,0 +1,12 @@
+.mainCardOfCard{
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
