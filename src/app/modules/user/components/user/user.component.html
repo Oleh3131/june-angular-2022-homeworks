@@ -1,0 +1,7 @@
+<div *ngIf="user" >
+
+  <h2>id: {{user.id}}</h2>
+  <a routerLink="{{user.id}}" [state]="{user}"><h3>name: {{user.name}}</h3></a>
+  <h3>username: {{user.username}}</h3>
+
+</div>
