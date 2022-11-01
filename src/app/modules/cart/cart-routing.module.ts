@@ -7,9 +7,8 @@ import {CartDetailsComponent} from "./components/cart-details/cart-details.compo
 
 
 const routes:Routes=[
-  {path:'',component:CartsComponent,children:[
-      {path:':id',component:CartDetailsComponent}
-    ]}
+  {path:'',component:CartsComponent},
+  {path:':id',component:CartDetailsComponent}
 ];
 
 @NgModule({

@@ -1,7 +1,8 @@
-<div *ngIf="user">
+<div *ngIf="user" class="cardOfUser">
 
   <h2>id: {{user.id}}</h2>
   <h4>email: {{user.email}}</h4>
   <h4>username: {{user.username}}</h4>
+  <button (click)="getDetails()">Details</button>
 
 </div>

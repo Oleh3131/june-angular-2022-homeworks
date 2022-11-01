@@ -1,1 +1,40 @@
-<app-user *ngFor="let user of users" [user]="user"></app-user>
+<div class="mainUsersBlock">
+
+  <div class="contentFirstUsersBlock">
+    <div *ngIf="selectedUser">
+
+      <h2>Address:</h2>
+      <ul>
+        <li>geolocation lat: {{selectedUser.address.geolocation.lat}}</li>
+        <li>geolocation long: {{selectedUser.address.geolocation.long}}</li>
+      </ul>
+      <h4>address city: {{selectedUser.address.city}}</h4>
+      <h4>address street: {{selectedUser.address.street}}</h4>
+      <h4>address number: {{selectedUser.address.number}}</h4>
+      <h4>address zipcode: {{selectedUser.address.zipcode}}</h4>
+      <h4>id: {{selectedUser.id}}</h4>
+      <h4>email: {{selectedUser.email}}</h4>
+      <h4>username: {{selectedUser.username}}</h4>
+      <h4>password: {{selectedUser.password}}</h4>
+      <h3>firstname: {{selectedUser.name.firstname}}</h3>
+      <h3>lastname: {{selectedUser.name.lastname}}</h3>
+      <h3>phone: {{selectedUser.phone}}</h3>
+      <h3>__v: {{selectedUser.__v}}</h3>
+
+    </div>
+  </div>
+
+    <hr>
+
+    <div class="contentSecondUsersBlock">
+
+      <app-user *ngFor="let user of users" [user]="user" (userDetails)="getUser($event)" class="mainCardBlock"></app-user>
+
+    </div>
+
+
+
+
+</div>
+
+

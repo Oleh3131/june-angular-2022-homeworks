@@ -1,0 +1,21 @@
+.cardOfUser{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.cardOfUser button{
+
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: black;
+
+}

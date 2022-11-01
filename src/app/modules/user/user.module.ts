@@ -6,14 +6,12 @@ import {UserRoutingModule} from "./user-routing.module";
 import {UserService} from "./services";
 import {UsersComponent} from "./components/users/users.component";
 import {UserComponent} from "./components/user/user.component";
-import {UserDetailsComponent} from "./components/user-details/user-details.component";
 
 
 @NgModule({
   declarations: [
     UsersComponent,
-    UserComponent,
-    UserDetailsComponent
+    UserComponent
   ],
   imports: [
     CommonModule,

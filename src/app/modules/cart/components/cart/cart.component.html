@@ -1,7 +1,8 @@
-<div *ngIf="cart">
+<div *ngIf="cart" class="cartContent">
 
   <h2>id: {{cart.id}}</h2>
   <h4>userId: {{cart.userId}}</h4>
   <h4>date: {{cart.date}}</h4>
+  <button (click)="getDetails()">Details</button>
 
 </div>

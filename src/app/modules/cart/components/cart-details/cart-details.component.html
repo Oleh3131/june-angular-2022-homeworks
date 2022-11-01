@@ -1,1 +1,14 @@
-<p>cart-details works!</p>
+<div *ngIf="cart" class="cardDetailsBlock">
+
+  <h2>id: {{cart.id}}</h2>
+  <h2>userId: {{cart.userId}}</h2>
+  <h2>date: {{cart.date}}</h2>
+  <h4>Products:</h4>
+  <ul>
+    <li>productId: {{cart.products[0].productId}}</li>
+    <li>quantity: {{cart.products[0].quantity}}</li>
+  </ul>
+  <h4>__v: {{cart.__v}}</h4>
+
+</div>
+

@@ -1,8 +1,9 @@
-<div *ngIf="product">
+<div *ngIf="product" class="productContent">
 
   <h2>id: {{product.id}}</h2>
   <h4>title: {{product.title}}</h4>
   <h4>price: {{product.price}}</h4>
+  <a routerLink="{{product.id}}">Show details</a>
 
 </div>
 

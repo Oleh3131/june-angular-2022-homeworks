@@ -1,0 +1,23 @@
+.mainProductContentBlock{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+
+.cartBlock{
+
+  width: 20%;
+  background: cadetblue;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+}
