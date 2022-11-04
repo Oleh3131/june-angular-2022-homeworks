@@ -1,0 +1,10 @@
+<div *ngIf="car">
+
+  <h2>id: {{car.id}}</h2>
+  <h4>model: {{car.model}}</h4>
+  <h4>price: {{car.price}}</h4>
+  <h4>year: {{car.year}}</h4>
+  <button (click)="update()" >Update</button>
+  <button (click)="delete()">Delete</button>
+</div>
+
